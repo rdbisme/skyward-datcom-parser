@@ -1,11 +1,12 @@
 # skyward-datcom-parser
+
 A simple Python script to parse Missile Datcom Output File
 
-This simple Command Line script converts the `for006.dat` Missile Datcom 97 output file to a MATLAB `.mat` file. It has been implemented to retrieve the data for a standard simulation without deflections. 
+This simple Command Line script converts the `for006.dat` Missile Datcom 97 output file to a MATLAB `.mat` file. It has been implemented to retrieve the data for a standard simulation without deflections.
 
-The version is pre-alpha so it could behave very buggy. 
+The version is pre-alpha so it could behave very buggy.
 
-## Usage ##
+## Usage
 
 ```
 python datcom_parser.py filename
@@ -13,12 +14,13 @@ python datcom_parser.py filename
 
 The filename is optional. Without it the parser will look for the `for006.dat' file.
 
-## Output File ###
-The Output file is composed by two structures: `Coeffs` and `State`. 
+## Output File
+
+The Output file is composed by two structures: `Coeffs` and `State`.
 `Coeffs` contains all the aerodynamic coefficients interpolated over the 4 states (AoA, Mach, Altitude, Sideslip angles) and the struct `State` contains the set of states (Aoa, Mach, Altitude, Sideslip Angle) the coefficients have been calculated on and the position of the center of gravity.
 
 ```
-Coeffs = 
+Coeffs =
 
       CAQ: [4-D double]
      CLNP: [4-D double]
@@ -47,7 +49,9 @@ Coeffs =
      CLLR: [4-D double]
     X_C_P: [4-D double]
 ```
-State = 
+
+```
+State =
 
       Altitudes: [3x1 double]
          Alphas: [19x1 double]
