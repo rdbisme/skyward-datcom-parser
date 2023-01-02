@@ -1,6 +1,6 @@
 # skyward-datcom-parser
 
-A simple Python script to parse Missile Datcom Output File
+A simple Python script to parse Missile Datcom Output File. This was developed long time ago when I was a student at https://www.aero.polimi.it/ and member of https://skywarder.eu
 
 This simple Command Line script converts the `for006.dat` Missile Datcom 97 output file to a MATLAB `.mat` file. It has been implemented to retrieve the data for a standard simulation without deflections.
 
